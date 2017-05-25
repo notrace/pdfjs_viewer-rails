@@ -469,7 +469,7 @@ if (typeof PDFJS === 'undefined') {
 
   // Range requests are broken in Chrome 39 and 40, https://crbug.com/442318
   var isChromeWithRangeBug = /Chrome\/(39|40)\./.test(navigator.userAgent);
-
+  PDFJS.disableRange = true;
   if (isSafari || isOldAndroid || isChromeWithRangeBug) {
     PDFJS.disableRange = true;
     PDFJS.disableStream = true;
