@@ -47,6 +47,7 @@ var isIOSChrome = userAgent.indexOf('CriOS') >= 0;
 var isIE = userAgent.indexOf('Trident') >= 0;
 var isIOS = /\b(iPad|iPhone|iPod)(?=;)/.test(userAgent);
 var isOpera = userAgent.indexOf('Opera') >= 0;
+alert(userAgent);
 var isSafari = /Safari\//.test(userAgent) &&
                !/(Chrome\/|Android\s)/.test(userAgent);
 
