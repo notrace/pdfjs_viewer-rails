@@ -50,7 +50,8 @@ var isOpera = userAgent.indexOf('Opera') >= 0;
 
 var isSafari = /Safari\//.test(userAgent) &&
                !/(Chrome\/|Android\s)/.test(userAgent);
-
+alert('isSafari:' + isSafari);
+alert('isIOS:' + isIOS);
 var hasDOM = typeof window === 'object' && typeof document === 'object';
 
 // Initializing PDFJS global object here, it case if we need to change/disable
